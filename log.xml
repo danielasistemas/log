@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+			<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+			<soap:Body>
+				<ScheduleMessageToFirstValid xmlns="http://api.textlane.com/">
+					<ApiKey>0f87b192-72a9-4659-984d-ecb220952f13</ApiKey>
+					<SubAccountID>9620f4c3-a41f-4f19-b7cb-79a266e1a6c0</SubAccountID>
+					<Destination>
+						<string>(602) 688-4058</string>
+						<string>(602) 688-4058</string>
+						<string>(623)219-6894</string>
+						<string>(623)219-6895</string>
+					</Destination>
+					<Message>Appt Reminder 04:58:09pm Carrington College 8909 Folsom Blvd.  Sacramento, CA 95826 916-585-7770 Reply STOP to stop or HELP for help</Message>
+					<ScheduledDate>2015-11-02 08:00:00</ScheduledDate>
+					<ResponderID>c4e06b08-104f-4282-8d9d-ebf01b5eb15e</ResponderID>
+					<ExternalID>7777777</ExternalID>
+				</ScheduleMessageToFirstValid>
+			</soap:Body>
+			</soap:Envelope>Tracy Tanner

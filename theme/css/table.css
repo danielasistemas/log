@@ -1,0 +1,39 @@
+table.data {
+	border-collapse: collapse;
+	margin-left: 12px;
+	background-color: #fff;
+	font-size: 10px;
+	color: #333;
+	font-weight: normal;
+}
+table.data th {
+	font-size: 14px;
+	border-bottom: solid 1px #666;
+	padding: 3px;
+}
+table.data td {
+	padding: 3px;
+}
+table.data td.bold {
+	font-weight: bold;
+}
+table.data td.numeric {
+	text-align: right;
+}
+table.data td.subtotal {
+	text-align: right;
+	font-weight: bold;
+	border-top: 1px solid #666;
+}
+table.data tr.underlined td {
+	border-bottom: solid 1px #999;
+}
+table.data tr:hover {
+	background: #ffc;
+}
+table.data tr.header:hover {
+	background: #fff;
+}
+tr.highlight td {
+	background: #ffc;
+}

@@ -1,0 +1,18 @@
+<soap:envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+			<soap:body>
+				<schedulemessagetofirstvalid xmlns="http://api.textlane.com/">
+					<apikey>0f87b192-72a9-4659-984d-ecb220952f13</apikey>
+					<subaccountid>9620f4c3-a41f-4f19-b7cb-79a266e1a6c0</subaccountid>
+					<destination>
+						<string>(602) 688-4058</string>
+						<string>(602) 688-4058</string>
+						<string>(623)219-6894</string>
+						<string>(623)219-6895</string>
+					</destination>
+					<message>Appt Reminder 04:59:57pm Carrington College 8909 Folsom Blvd.  Sacramento, CA 95826 916-585-7770 Reply STOP to stop or HELP for help</message>
+					<scheduleddate>2015-11-02 08:00:00</scheduleddate>
+					<responderid>c4e06b08-104f-4282-8d9d-ebf01b5eb15e</responderid>
+					<externalid>7777777</externalid>
+				</schedulemessagetofirstvalid>
+			</soap:body>
+</soap:envelope>
