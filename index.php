@@ -22,7 +22,7 @@ $system = new System();
 $system->set_error_display();
 
 //connect database
-$system->db_name = "cdx";
+$system->db_name = "log";
 if ( !$conn = $system->db_connect() ){
 	$_SESSION['sysmsg'] = "ERROR: database {$system->db_name} not connected";
 }
@@ -37,6 +37,27 @@ $url_array = $system->get_url_vars();
 
 //check for api request and exit
 if (isset($url_array[0]) && $url_array[0] == "api"){
+	require_once("api/api_controller.php");
+	if ($system->conn) mysql_close($system->conn);
+	exit;
+}
+
+//check for api request and exit
+if (isset($url_array[0]) && $url_array[0] == "activity"){
+	require_once("api/api_controller.php");
+	if ($system->conn) mysql_close($system->conn);
+	exit;
+}
+
+//check for api request and exit
+if (isset($url_array[0]) && $url_array[0] == "error"){
+	require_once("api/api_controller.php");
+	if ($system->conn) mysql_close($system->conn);
+	exit;
+}
+
+//check for api request and exit
+if (isset($url_array[0]) && $url_array[0] == "exception"){
 	require_once("api/api_controller.php");
 	if ($system->conn) mysql_close($system->conn);
 	exit;
