@@ -44,21 +44,24 @@ if (isset($url_array[0]) && $url_array[0] == "api"){
 
 //check for api request and exit
 if (isset($url_array[0]) && $url_array[0] == "activity"){
-	require_once("api/api_controller.php");
-	if ($system->conn) mysql_close($system->conn);
-	exit;
+	echo "activity";
+	require_once("log/activity_controller.php");
+	//if ($system->conn) mysql_close($system->conn);
+	//exit;
 }
 
 //check for api request and exit
 if (isset($url_array[0]) && $url_array[0] == "error"){
-	require_once("api/api_controller.php");
+	echo "error";	
+	//require_once("api/api_controller.php");
 	if ($system->conn) mysql_close($system->conn);
 	exit;
 }
 
 //check for api request and exit
 if (isset($url_array[0]) && $url_array[0] == "exception"){
-	require_once("api/api_controller.php");
+	echo "exception";
+	//require_once("api/api_controller.php");
 	if ($system->conn) mysql_close($system->conn);
 	exit;
 }
